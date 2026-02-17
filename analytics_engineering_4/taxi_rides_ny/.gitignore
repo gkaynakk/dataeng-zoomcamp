@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# Local data / db files
+data/
+*.duckdb
+*.db
+*.parquet
+*.csv
+*.csv.gz
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log

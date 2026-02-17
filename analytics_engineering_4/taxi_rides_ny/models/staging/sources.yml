@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: taxi_db
+    description: "Raw data sources for NYC taxi rides"
+    schema: main          # <‑‑ add this line; main is the default schema in your DB
+
+    tables:
+      - name: yellow_trips
+      - name: green_trips

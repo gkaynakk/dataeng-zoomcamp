@@ -1,0 +1,75 @@
+[0m09:33:54.483766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F4FC68C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F517A7ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F517A7B10>]}
+
+
+============================== 09:33:54.490204 | 9ef6f9c2-6b29-49ca-854f-46a12543661b ==============================
+[0m09:33:54.490204 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:33:54.491098 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\g00936021\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init taxi_rides_ny', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m09:33:54.507300 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\g00936021\.dbt
+[0m09:33:54.509547 [debug] [MainThread]: Starter project path: D:\dataeng-zoomcamp\analytics_engineering_4\.venv\Lib\site-packages\dbt\include\starter_project
+[0m09:33:54.532888 [info ] [MainThread]: 
+Your new dbt project "taxi_rides_ny" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:33:54.533515 [info ] [MainThread]: Setting up your profile.
+[0m09:34:19.838903 [error] [MainThread]: Encountered an error:
+list index out of range
+[0m09:34:19.841286 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\dataeng-zoomcamp\analytics_engineering_4\.venv\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "D:\dataeng-zoomcamp\analytics_engineering_4\.venv\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "D:\dataeng-zoomcamp\analytics_engineering_4\.venv\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+  File "D:\dataeng-zoomcamp\analytics_engineering_4\.venv\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\dataeng-zoomcamp\analytics_engineering_4\.venv\Lib\site-packages\dbt\task\init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "D:\dataeng-zoomcamp\analytics_engineering_4\.venv\Lib\site-packages\dbt\task\init.py", line 243, in ask_for_adapter_choice
+    return available_adapters[numeric_choice - 1]
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+
+[0m09:34:19.843488 [debug] [MainThread]: Command `dbt init` failed at 09:34:19.843238 after 25.48 seconds
+[0m09:34:19.843834 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F517B3BB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F51A69B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F51A406B0>]}
+[0m09:34:19.844180 [debug] [MainThread]: Flushing usage events
+[0m09:34:20.829372 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:34:35.365649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C64F68C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C66CABED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C66CABB10>]}
+
+
+============================== 09:34:35.369615 | 706d9e1b-1421-4610-867b-2f13eb0fe3a8 ==============================
+[0m09:34:35.369615 [info ] [MainThread]: Running with dbt=1.11.2
+[0m09:34:35.370267 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\g00936021\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init taxi_rides_ny', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m09:34:35.383677 [info ] [MainThread]: A project called taxi_rides_ny already exists here.
+[0m09:34:35.384935 [debug] [MainThread]: Command `dbt init` succeeded at 09:34:35.384839 after 0.13 seconds
+[0m09:34:35.385199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C66CB2780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C66D696D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C6690B570>]}
+[0m09:34:35.385433 [debug] [MainThread]: Flushing usage events
+[0m09:34:36.369759 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:39:42.898978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFB2F64D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFB4CC3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFB4CC3B10>]}
+
+
+============================== 16:39:42.906269 | de05fdfa-c4f3-48f7-8896-8a96328e4451 ==============================
+[0m16:39:42.906269 [info ] [MainThread]: Running with dbt=1.11.2
+[0m16:39:42.907038 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\g00936021\\.dbt', 'invocation_command': 'dbt test --select fct_trips', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m16:39:42.907515 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\dataeng-zoomcamp\analytics_engineering_4\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:39:42.908998 [debug] [MainThread]: Command `dbt test` failed at 16:39:42.908873 after 0.55 seconds
+[0m16:39:42.909292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFB4CBA8B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFB4CE96D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFB491F570>]}
+[0m16:39:42.909883 [debug] [MainThread]: Flushing usage events
+[0m16:39:45.379638 [debug] [MainThread]: An error was encountered while trying to flush usage events
