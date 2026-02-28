@@ -1,0 +1,30 @@
+name: nyc_taxi
+schedule: daily
+start_date: "2022-01-01"
+
+default_connections:
+  duckdb: duckdb-default
+
+variables:
+  taxi_types:
+    type: array
+    items:
+      type: string
+    default: ["yellow"]
+
+assets:
+  - name: ingestion.trips
+    type: python
+    file: assets/ingestion/trips.py
+
+  - name: staging.trips
+    type: duckdb.sql
+    file: staging/trips.sql
+    depends:
+      - asset: ingestion.trips
+
+  - name: reports.trip_reports
+    type: duckdb.sql
+    file: reports/trip_reports.sql
+    depends:
+      - asset: staging.trips
